@@ -1,0 +1,48 @@
+<div class="col-md-4">
+              
+              <h5>Profile</h5>
+                <%= gravatar_image_tag(current_user.email, size: 64, alt: current_user.name) %>
+                <div class="card-body">
+                  <p class="card-text">Name: <%= current_user.name %></p>
+                  <p class="card-text">Username: <%= current_user.username %></p>
+                  <div class="d-flex justify-content-between align-items-center">
+
+                  <div class="form-check form-check-inline">
+                   <p class="heading"></p>
+                        <p class="title is-6"></p>
+                    </div>
+                </div>
+                
+                        <p class="heading"></p>
+                        <p class="title is-6"></p>
+                
+                   
+                        <p class="heading"></p>
+                        <p class="title is-6"></p>
+                
+                    
+                  </div>
+
+
+                  <table class="table">
+            <thead class="thead-inverse">
+                <tr>
+                  
+                    <th>Tweeets</th>
+                    <th>Following</th>
+                    <th>Followers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    
+                    <td><%= current_user.tweeets.count %></td>
+                    <td>123</td>
+                    <td>465K</td>
+                </tr>
+                
+            </tbody>
+        </table>
+                </div>
+              
+            
